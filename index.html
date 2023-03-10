@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ray Maconaughey - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ray Maconaughey
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          real@reallymail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1-800-876-5309
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="Recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://gifimage.net/wp-content/uploads/2017/06/waving-gif-3.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Greetings! My name is Ray. <img src="https://www.pngkey.com/png/full/148-1485816_open-waving-hand-emoji-svg.png" width="60px"/>
+          </h1>
+          <p>
+            I am a transitioning Air Force member with 10 years of operations support experience, making a career switch into IT!
+            My passion and drive are with cybersecurity, but I love everything tech and security. On my own time, I have learned the fundamentals of
+            Linux, how to setup a virtual environment, how to navigate and utilize Wireshark network analyzer, and learned about the different products
+            Palo Alto offers.<br>
+            <br>
+            During my free time I like to play videogames, spend time with my lovely wife, and our corgi.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+            <img src="https://img2.freepng.es/20180502/fcq/kisspng-linux-distribution-computer-icons-operating-system-operating-5ae9bdc1db1999.3924105415252679058974.jpg"/>
+            <h6>Linux</h6>
+            <p>0.5 years experience</p>
+          </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>0.1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>0.1 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://clipground.com/images/css-3-logo-clipart.jpg"/>
+            <h6>CSS</h6>
+            <p>0.1 years experience</p>
+          </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Wireshark Network Security Analysis</h3>
+            <ul>
+              <li>Used Wireshark to capture network traffic through local machine, analyzed RADIUS traffic, and connected to an HTTP Server to analyze captured username and password packets.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Linux Commands and Shell Scripting</h3>
+            <ul>
+              <li>learned fundamental Linux commands and shell scripting through CLI, navigating through folders and altering read/write permissions.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>VirtualBox Home VM</h3>
+            <ul>
+              <li>Set up and ran Unix Operating System through VirtualBox on home computer.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ray is a driven and open-minded individual with the knack of learning new concepts very quickly.
+          He is a pleasure to work with, humble, and understanding.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          The time I've worked with Ray has been a great experience. 
+          He is cooperative and easy-going. 
+          10/10 would work with again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Ray when he was at his first base. Very cool guy. Intelligent. Funny. 
+          Would be a good asset to any organization.
+          <span>&#8221;</span>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
